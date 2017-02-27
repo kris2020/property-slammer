@@ -1,15 +1,18 @@
 import React, { Component } from 'react';
+import PropertyList from './PropertyList';
+import UserInput from './UserInput';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <div className="App-header">
-          <h2>Welcome to React</h2>
+        <div className="row-fluid">
+          <div className="col-md-12 text-center">
+            <h2>Property Slammer</h2>
+          </div>
+          <PropertyList/>
+          <UserInput/>
         </div>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
       </div>
     );
   }
