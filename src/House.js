@@ -3,7 +3,10 @@ import { formatPrice } from './helpers';
 
 class House extends React.Component {
   render() {
-    const { details } = this.props;
+    const { details, selection, index } = this.props;
+    const buttonText = selection[index] ? 'Remove' : 'Add';
+    const buttonClass = selection[index] ? 'btn btn-danger' : 'btn btn-success';
+    // const buttonText = 'Hi mum';
     return (
       <div className="row">
         <div className="col-xs-6 col-sm-2">
@@ -12,7 +15,7 @@ class House extends React.Component {
           {details.floor_area} sq. ft.</p>
         </div>
         <div className="col-xs-6 col-sm-2">
-          <button className="btn btn-success">Include</button>
+          <button className={buttonClass} onClick={() => this.props.addToSelection(index)}>{buttonText}</button>
         </div>
       </div>
     )

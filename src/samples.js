@@ -14,12 +14,12 @@ module.exports = {
       "price": 280000,
       "floor_area": 957
   },
-  "house4:": {
+  "house4": {
       "address": "56 Benson Avenue",
       "price": 300000,
       "floor_area": 1022
   },
-  "house5:": {
+  "house5": {
       "address": "52 Benson Avenue",
       "price": 287500,
       "floor_area": 925
