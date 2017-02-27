@@ -1,17 +1,20 @@
 import React, { Component } from 'react';
-import PropertyList from './PropertyList';
+import HouseList from './HouseList';
 import UserInput from './UserInput';
 
 class App extends Component {
+
   render() {
     return (
       <div className="App">
-        <div className="row-fluid">
-          <div className="col-md-12 text-center">
-            <h2>Property Slammer</h2>
+        <div className="container-fluid">
+          <div className="row">
+            <div className="col-xs-12 text-center">
+              <h2>Property Slammer</h2>
+            </div>
+            <HouseList/>          
+            <UserInput/>
           </div>
-          <PropertyList/>
-          <UserInput/>
         </div>
       </div>
     );
