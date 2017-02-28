@@ -9,14 +9,14 @@ class UserInput extends React.Component {
 
     return (
       <div className="row">
-        <div className="form-group col-xs-10 col-xs-offset-1 col-sm-4">
+        <div className="form-group col-xs-8 col-xs-offset-1 col-sm-5 col-sm-offset-4 col-md-3">
           <label htmlFor="sqFt">Size of your property</label>
           <div className="input-group">
             <input type="text" id="sqFt" className="form-control" value={size} readOnly/>
             <div className="input-group-addon">sq. ft.</div>
           </div>
         </div>
-        <div className="form-group col-xs-10 col-xs-offset-1 col-sm-4">
+        <div className="form-group col-xs-8 col-xs-offset-1 col-sm-5 col-sm-offset-4 col-md-3">
           <label htmlFor="propertyValue">Your estimated value</label>
           <div className="input-group">
             <div className="input-group-addon">£</div>

@@ -9,12 +9,12 @@ class House extends React.Component {
     // const buttonText = 'Hi mum';
     return (
       <div className="row">
-        <div className="col-xs-6 col-sm-2">
+        <div className="col-xs-6 col-sm-4 col-md-3">
           <p>{details.address}<br/>
           £ {formatPrice(details.price)}<br/>
           {details.floor_area} sq. ft.</p>
         </div>
-        <div className="col-xs-6 col-sm-2">
+        <div className="col-xs-6 col-sm-4 col-md-3">
           <button className={buttonClass} onClick={() => this.props.addToSelection(index)}>{buttonText}</button>
         </div>
       </div>

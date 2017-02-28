@@ -37,18 +37,18 @@ class App extends Component {
       <div className="App">
         <div className="container-fluid">
           <div className="row">
-            <div className="col-xs-12">
-              <h2 className="text-center">Property Slammer</h2>
-              <p className="text-center">Add some properties to calculate your valuation!</p>
-              <div className="col-xs-8 col-xs-offset-4">
-                {
-                  Object
-                    .keys(this.state.houses)
-                    .map(key => <House key={key} index={key} addToSelection={this.addToSelection} details={this.state.houses[key]} selection={this.state.selection}/>)
-                }
-              </div>
-              <UserInput selection={this.state.selection} houses={this.state.houses} size={this.state.size}/>
+            <div className="col-xs-11 col-xs-offset-1 col-sm-8 col-sm-offset-4">
+              <h2>Property Slammer</h2>
+              <p>Add some properties to calculate your valuation!</p>
             </div>
+            <div className="col-xs-11 col-xs-offset-1 col-sm-8 col-sm-offset-4">
+              {
+                Object
+                  .keys(this.state.houses)
+                  .map(key => <House key={key} index={key} addToSelection={this.addToSelection} details={this.state.houses[key]} selection={this.state.selection}/>)
+              }
+            </div>
+            <UserInput selection={this.state.selection} houses={this.state.houses} size={this.state.size}/>
           </div>
         </div>
       </div>
