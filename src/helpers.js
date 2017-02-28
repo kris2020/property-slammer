@@ -10,5 +10,5 @@ export function getValuation(selection, houses, size) {
     .keys(selection) // for each house in the selection, get its price and size
     .map(key => valuation += (houses[key].price / houses[key].floor_area));
   // divide by the number of houses in the selection
-  return (valuation * 1000) / Object.keys(selection).length;
+  return (valuation * size) / Object.keys(selection).length;
 }
